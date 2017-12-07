@@ -1,26 +1,19 @@
-# School Data Sync Profile APIs: Create Profile using APIs
+# Create a profile using the school data sync profile APIs
 
-This articles describes in detail how to create a profile for automated sync using School Data Sync Profile Management APIs with an API provider. To get started with the APIs and the pre-requisite please refer to the document [School Data Sync Profile APIs : Introduction](
-synchronization-profile-api-introduction.md).
+You can use the school data sync profile management APIs to enable automated profile and roster sync management. Setting up a profile for sync using an API connector involves two steps.
 
-
-## Create a Profile for automated sync:
-The School Data Sync APIs enable automated profile and Roster sync management. Setting up a profile for sync using an API connector is a two step process:
-
-|   Operation	                            |  REST Verb 	|   Description                             	|   	
+|   Operation	                            |  REST call 	|   Description                             	|   	
 |------	                                    |---	        |---	                                        |
-|[Create Profile](../api/synchronizationprofile_post.md) (Mandatory)	                        |   POST	    |   Setup a profile for SDS Sync	            |   	
-| [Monitor Provisioning ](../api/synchronizationprofile_get.md) (Mandatory)	                        |   GET	    |   Verify profile is provisioned by checking the state property   |
-| [Get Status](../api/synchronizationprofilestatus_get.md) (Optional)         	                    |   GET	        |   Gets the status of the ongoing sync	        |   	
+|[Create Profile](../api/synchronizationprofile_post.md) (Required)|   POST|   Set up a profile for SDS Sync |   	
+| [Monitor Provisioning ](../api/synchronizationprofile_get.md) (Required)|GET|   Verify that the profile is provisioned by checking the state property.  |
+| [Get Status](../api/synchronizationprofilestatus_get.md) (Optional)         	                    |   GET	        |   Get the status of the ongoing sync.|   	
 
 
-## Step 1 : Create Profile
+## Step 1: Create profile
 
-Create Profile: Create Profile API with API provider option allows you to setup a school data sync profile for syncing. Once a profile has a been created it can reused for all future syncs.
+First, create profile that you want to sync. After you create the profile, you can use it for all future syncs.
 
-**Note : Before calling these APIs, please review the permissions required for each of these in the corresponding API documentation.**
-
-Please refer to the [Create Profile API documentation](../api/synchronizationprofile_post.md) to look at the API reference and a sample request
+For information about how to create a profile, see [Create profile](../api/synchronizationprofile_post.md). Make sure that you have the appropriate permissions, as listed in the topic.
 
 Most of the options for CreateProfile with API format are similar to CSV format with one key difference - sync format type which is API instead of CSV.
 
