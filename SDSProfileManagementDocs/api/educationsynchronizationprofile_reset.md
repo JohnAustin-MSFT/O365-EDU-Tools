@@ -1,6 +1,8 @@
-# Pause sync on an active synchronization profile
+# Reset sync on an educationSynchronizationProfile
 
-Pause sync of a specific [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
+Reset the sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
+
+> **Note:** This operation will cause synchronization to restart. Any errors encountered will be deleted. No data will be deleted from Azure Active Directory (Azure AD). 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -14,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /synchronizationProfiles/{id}/pause
+POST /synchronizationProfiles/{id}/reset
 ```
 
 ## Request headers
@@ -29,13 +31,13 @@ If successful, this method returns a `200 OK` response code.
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "post_synchronizationProfile_pause"
+  "name": "post_educationSynchronizationProfile_reset"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/pause
+POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/reset
 ```
 
 ##### Response

@@ -1,6 +1,6 @@
-# Update a synchronizationProfile
+# Create an educationSynchronizationProfile
 
-Updates properties for an existing [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
+Create a request for a new school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant. [Query the status](educationsynchronizationprofilestatus_get.md) to get the status of the profile. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -14,30 +14,30 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PUT /synchronizationProfiles
+POST /synchronizationProfiles
 ```
 
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required.  |
-| Content-Type | string | application/json. Required. |
+| Content-Type | string | Application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of the [synchronizationProfile](../resources/educationsynchronizationprofile.md) object.
+In the request body, supply a JSON representation of the [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) object.
 
 ## Response
-If successful, this method returns a `202, Accepted` response code and a [synchronizationProfile](../resources/educationsynchronizationprofile.md) object in the response body.
+If successful, this method returns a `202, Accepted` response code and an [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) object in the response body.
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "update_synchronizationProfile"
+  "name": "create_educationSynchronizationProfile"
 }-->
 ```http
-PUT https://graph.microsoft.com/beta/education/synchronizationProfiles
+POST https://graph.microsoft.com/beta/education/synchronizationProfiles
 Content-type: application/json
 
 {
@@ -84,17 +84,17 @@ Content-type: application/json
 ```
 
 ##### Response
-Here is an example of the response. 
+The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.synchronizationProfile",
+  "@odata.type": "microsoft.graph.educationSynchronizationProfile",
 } -->
 ```http
-HTTP/1.1 202 Accepted
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {

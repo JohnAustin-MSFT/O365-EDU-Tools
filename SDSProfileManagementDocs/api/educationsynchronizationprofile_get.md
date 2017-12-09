@@ -21,8 +21,6 @@ GET /synchronizationProfiles/{id}
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required.  |
-|Delegated (personal Microsoft account|Not supported.|
-|Application|Not supported.|
 
 ## Request body
 Do not supply a request body for this method.

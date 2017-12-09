@@ -1,6 +1,6 @@
-# List synchronization profiles
+# List educationSynchronizationProfiles
 
-Retrieve the collection of [synchronization profiles](../resources/educationsynchronizationprofile.md) in the tenant.
+Retrieve the collection of school data [synchronization profiles](../resources/educationsynchronizationprofile.md) in the tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -28,11 +28,11 @@ This method supports the following [OData Query Parameters](http://developer.mic
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [synchronizationProfile](../resources/educationsynchronizationprofile.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) objects in the response body.
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "list_synchronizationProfile"
@@ -42,7 +42,7 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles
 ```
 
 ##### Response
-Here is an example of the response. 
+The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 

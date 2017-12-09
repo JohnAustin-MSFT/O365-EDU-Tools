@@ -1,6 +1,6 @@
-# Resume sync on a synchronization profile
+# Resume sync on an educationSynchronizationProfile
 
-Resume sync of a specific [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
+Resume the sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -29,10 +29,10 @@ If successful, this method returns a `200 OK` response code.
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "post_synchronizationProfile_resume"
+  "name": "post_educationSynchronizationProfile_resume"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/resume

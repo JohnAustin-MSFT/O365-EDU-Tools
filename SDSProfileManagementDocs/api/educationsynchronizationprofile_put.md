@@ -1,6 +1,6 @@
-# Create a synchronizationProfile
+# Update an educationSynchronizationProfile
 
-Creates a request for a new [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant. [Query the status](synchronizationprofilestatus_get.md) to know the state of the profile. 
+Update properties for an existing school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -14,7 +14,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /synchronizationProfiles
+PUT /synchronizationProfiles
 ```
 
 ## Request headers
@@ -34,10 +34,10 @@ If successful, this method returns a `202, Accepted` response code and a [synchr
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_synchronizationProfile"
+  "name": "update_synchronizationProfile"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/synchronizationProfiles
+PUT https://graph.microsoft.com/beta/education/synchronizationProfiles
 Content-type: application/json
 
 {
@@ -94,7 +94,7 @@ Here is an example of the response.
   "@odata.type": "microsoft.graph.synchronizationProfile",
 } -->
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 202 Accepted
 Content-type: application/json
 
 {
