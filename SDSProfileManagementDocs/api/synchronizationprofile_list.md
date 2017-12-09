@@ -3,7 +3,7 @@
 Retrieve the collection of [synchronization profiles](../resources/educationsynchronizationprofile.md) in the tenant.
 
 ## Permissions
-One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 | Permission type | Permissions (from least to most privileged) |
 |:-----------|:----------|

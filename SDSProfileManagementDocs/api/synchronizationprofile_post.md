@@ -3,7 +3,7 @@
 Creates a request for a new [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant. [Query the status](synchronizationprofilestatus_get.md) to know the state of the profile. 
 
 ## Permissions
-The following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+The following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 | Permission type | Permissions |
 |:-----------|:----------|

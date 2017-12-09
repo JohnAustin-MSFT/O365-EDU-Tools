@@ -1,9 +1,9 @@
 # Get an educationSynchronizationProfile
 
-Retrieve a [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant based on the identifier.
+Retrieve a school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant based on the identifier.
 
 ## Permissions
-One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 | Permission type | Permissions (from least to most privileged) |
 |:-----------|:----------|
@@ -25,7 +25,7 @@ GET /synchronizationProfiles/{id}
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and a [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) object in the response body.
 
 ## Example
 ##### Request

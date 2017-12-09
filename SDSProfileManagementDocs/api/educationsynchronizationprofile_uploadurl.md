@@ -5,7 +5,7 @@ Retrieve a shared access signature (SAS) for uploading source files to azure blo
 > **Note:** To access the blob storage with the SAS token use [Azure storage SDKs](https://github.com/search?q=org%3AAzure+azure-storage) or [AzCopy](https://docs.microsoft.com/en-us/azure/storage/storage-use-azcopy).
 
 ## Permissions
-The following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+The following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 | Permission type | Permissions |
 |:-----------|:----------|
