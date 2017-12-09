@@ -8,6 +8,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type | Permissions (from least to most privileged) |
 |:-----------|:----------|
 | Delegated (work or school account) | EduAdministration.Read, EduAdministration.ReadWrite |
+|Delegated (personal Microsoft account|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -29,7 +31,7 @@ If successful, this method returns a `200 OK` response code and an [educationSyn
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_educationSynchronizationProfile"
@@ -39,7 +41,7 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 ```
 
 ##### Response
-Here is an example of the response. 
+The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 

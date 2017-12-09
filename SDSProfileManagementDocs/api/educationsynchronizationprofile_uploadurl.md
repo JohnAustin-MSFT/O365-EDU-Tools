@@ -1,11 +1,11 @@
 # educationSynchronizationProfile: uploadUrl
 
-Retrieve a shared access signature (SAS) for uploading source files to azure blob storage for a specific [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant. The SAS token has a validity of 1 hour.
+Retrieve a shared access signature (SAS) for uploading source files to Azure blob storage for a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant. The SAS token has a validity of 1 hour.
 
 > **Note:** To access the blob storage with the SAS token use [Azure storage SDKs](https://github.com/search?q=org%3AAzure+azure-storage) or [AzCopy](https://docs.microsoft.com/en-us/azure/storage/storage-use-azcopy).
 
 ## Permissions
-The following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 | Permission type | Permissions |
 |:-----------|:----------|
@@ -27,21 +27,21 @@ GET /synchronizationProfiles/{id}/uploadUrl
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and a SAS URL for the [synchronizationProfile](../resources/educationsynchronizationprofile.md) in the response body.
+If successful, this method returns a `200 OK` response code and a SAS URL for the [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) in the response body.
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_synchronizationProfile_uploadurl"
+  "name": "get_educationSynchronizationProfile_uploadurl"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/uploadUrl
 ```
 
 ##### Response
-Here is an example of the response. 
+The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 

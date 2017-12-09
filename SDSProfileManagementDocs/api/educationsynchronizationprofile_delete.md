@@ -1,9 +1,9 @@
-# Delete a synchronizationProfile
+# Delete a educationSynchronizationProfile
 
-Delete a [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant based on the identifier.
+Delete a school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant based on the identifier.
 
 ## Permissions
-The following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 | Permission type | Permissions |
 |:-----------|:----------|
