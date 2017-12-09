@@ -3,7 +3,7 @@
 Delete a [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant based on the identifier.
 
 ## Permissions
-The following permissions are required to call this API.
+The following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 | Permission type | Permissions |
 |:-----------|:----------|
@@ -19,6 +19,8 @@ DELETE /synchronizationProfiles/{id}
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required.  |
+|Delegated (personal Microsoft account|Not supported.|
+|Application|Not supported.|
 
 ## Request body
 Do not supply a request body for this method.

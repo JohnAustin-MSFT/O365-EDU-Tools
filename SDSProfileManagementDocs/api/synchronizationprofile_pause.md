@@ -3,11 +3,13 @@
 Pause sync of a specific [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
 
 ## Permissions
-The following permissions are required to call this API.
+The following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 | Permission type | Permissions |
 |:-----------|:----------|
 | Delegated (work or school account) | EduAdministration.ReadWrite |
+|Delegated (personal Microsoft account|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

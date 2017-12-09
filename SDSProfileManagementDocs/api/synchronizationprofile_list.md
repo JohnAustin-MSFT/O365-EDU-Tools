@@ -3,11 +3,13 @@
 Retrieve the collection of [synchronization profiles](../resources/educationsynchronizationprofile.md) in the tenant.
 
 ## Permissions
-One of the following permissions are required to call this API.
+One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 | Permission type | Permissions (from least to most privileged) |
 |:-----------|:----------|
 | Delegated (work or school account) | EduAdministration.Read, EduAdministration.ReadWrite |
+|Delegated (personal Microsoft account|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -16,7 +18,7 @@ GET /synchronizationProfiles
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response. The method supports $filter, $orderby, $top, $skip and $count parameters.
+This method supports the following [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response: $filter, $orderby, $top, $skip, and $count.
 
 ## Request headers
 | Name       | Type | Description|
@@ -40,7 +42,10 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

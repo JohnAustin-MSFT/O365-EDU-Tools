@@ -1,9 +1,9 @@
-# Get a synchronizationProfile
+# Get an educationSynchronizationProfile
 
 Retrieve a [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant based on the identifier.
 
 ## Permissions
-One of the following permissions are required to call this API.
+One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 | Permission type | Permissions (from least to most privileged) |
 |:-----------|:----------|
@@ -19,29 +19,34 @@ GET /synchronizationProfiles/{id}
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required.  |
+|Delegated (personal Microsoft account|Not supported.|
+|Application|Not supported.|
 
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and a [synchronizationProfile](../resources/educationsynchronizationprofile.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) object in the response body.
 
 ## Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_synchronizationProfile"
+  "name": "get_educationSynchronizationProfile"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.synchronizationProfile",
+  "@odata.type": "microsoft.graph.educationSynchronizationProfile",
 } -->
 ```http
 {
